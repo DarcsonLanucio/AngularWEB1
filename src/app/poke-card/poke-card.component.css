@@ -26,6 +26,7 @@
   color: #313131;
   font-size: 145%;
   margin: 0.5em 0 5px;
+  text-transform: capitalize;
 }
 
 .pokemon-card__types {
@@ -40,7 +41,7 @@
   max-width: 110px;
   width: 38.4375%;
   float: left;
-  text-transform: none;
+  text-transform: capitalize;
   font-size: 11px;
   text-align: center;
 }
@@ -64,7 +65,7 @@
   background-color: #707070;
   color: #fff
 }
-.pokemon-card__type--flayng{
+.pokemon-card__type--flying{
   background-color: #3dc7ef;
   color: #212121
  }
@@ -105,8 +106,8 @@
   color: #212121
 }
 .pokemon-card__type--psychic{
-  background-color: #a4acaf;
-  color: #212121
+  background-color: #f366b9;
+  color: #fff
 }
 .pokemon-card__type--ghost{
   background-color: #7b62a3;
