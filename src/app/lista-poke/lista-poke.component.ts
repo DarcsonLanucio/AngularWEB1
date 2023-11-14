@@ -35,7 +35,7 @@ export class ListaPokeComponent {
   },{
     image: 'https://assets.pokemon.com/assets/cms2/img/pokedex/detail/004.png',
     number: 4,
-    name: 'Venosaur',
+    name: 'Charmander',
     types: [
       Types.fire
     ]
