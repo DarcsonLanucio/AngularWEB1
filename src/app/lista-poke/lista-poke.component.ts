@@ -39,6 +39,13 @@ export class ListaPokeComponent {
     types: [
       Types.fire
     ]
+  },{
+    image: 'https://assets.pokemon.com/assets/cms2/img/pokedex/detail/005.png',
+    number: 4,
+    name: 'Charmilion',
+    types: [
+      Types.fire
+    ]
   },];
 
 
