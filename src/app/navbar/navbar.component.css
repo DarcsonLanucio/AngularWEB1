@@ -1,7 +1,4 @@
-mat-toolbar{
-  background: #3dc7ef;
-  color: red;
-}
-.example-spacer {
-  flex: 1 1 auto;
+.navbar-light .navbar-nav .nav-link.active-link{
+  color:var(--primeira-color);
+  font-weight:bold;
 }
