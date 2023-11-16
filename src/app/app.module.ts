@@ -8,6 +8,7 @@ import {HttpClientModule} from "@angular/common/http";
 import {BodyComponent} from './body/body.component';
 import {NavbarComponent} from './navbar/navbar.component';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import { FormComponent } from './form/form.component';
 
 @NgModule({
   declarations: [
@@ -15,6 +16,7 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
     ListaPokeComponent,
     PokeCardComponent,
     BodyComponent,
+    FormComponent,
 
   ],
   imports: [
