@@ -12,7 +12,7 @@ export class PokemonService {
   constructor(
     private httpClient: HttpClient,
   ) {
-    const allPokemonsUrl = ' https://pokeapi.co/api/v2/pokemon/?limit=151';
+    const allPokemonsUrl = ' https://pokeapi.co/api/v2/pokemon/?limit=5';
     // @ts-ignore
     this.httpClient.get<any>(allPokemonsUrl).pipe(
       map(value => value.results),
