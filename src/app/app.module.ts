@@ -16,18 +16,20 @@ import {CarouselModule} from "primeng/carousel";
 import {TagModule} from "primeng/tag";
 import {ButtonModule} from "primeng/button";
 import {FormsModule} from "@angular/forms";
+import {PokePageComponent} from "./poke-page/poke-page.component";
 
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    ListaPokeComponent,
-    PokeCardComponent,
-    BodyComponent,
-    FormComponent,
-    SliderComponent,
+    declarations: [
+        AppComponent,
+        ListaPokeComponent,
+        PokeCardComponent,
+        BodyComponent,
+        FormComponent,
+        SliderComponent,
+        PokePageComponent,
 
-  ],
+    ],
   imports: [
     HttpClientModule,
     BrowserModule,

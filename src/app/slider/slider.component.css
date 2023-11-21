@@ -1,13 +1,14 @@
-
+.carousel-inner{}
   .card-wraper{
 
     display:flex;
 
   }
-  .card{
+  .carousel-item{
     margin:0 .5em;
-    width: calc(100%/4);
+    width: 100%;
   }
+
 
 
 

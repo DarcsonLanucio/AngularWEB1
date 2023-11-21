@@ -1,0 +1,18 @@
+<div class="poke-pagina" *ngIf="pokemon">
+  <div class="poke-pagina__nameNamber">
+    <div class="poke-pagina__number">
+      Nº{{getPokemonNumber(pokemon)}}
+    </div>
+    <div class="poke-pagina__name">
+      {{pokemon.name}}
+    </div>
+  </div>
+  <div class="poke-pagina__imag">
+    <img [src]="getPokemonImage(pokemon)">
+  </div>
+  <div class="poke-pagina__types">
+    <div class="poke-pagina__type " *ngFor="let type of pokemon.types" [class]="'poke-pagina__type--'+type.toLocaleLowerCase()">{{type}}</div>
+  </div>
+
+
+</div>
