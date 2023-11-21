@@ -1,27 +1,32 @@
-<div class="flip-card">
-  <div class="flip-card-inner">
-    <div class="flip-card-front">
-      <form>
+<div class="tudo">
+  <form id="formulario" onsubmit="return passandoDados(inputName);">
 
-        <div class="form-group row">
-          <div class="col-sm-5">
-            <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
-          </div>
-        </div>
+    <div class="form-group row">
+      <div class="col-sm-9">
+        <input type="text" class="form-control" id="inputName" name="inputName" placeholder="Nome" >
+      </div>
+    </div>
 
-        <div class="form-group row">
-          <div class="col-sm-5">
-            <input type="password" class="form-control" id="inputPassword3" placeholder="Senha">
-          </div>
-        </div>
+    <div class="form-group row">
+      <div class="col-sm-9">
+        <input type="password" class="form-control" id="inputPassword3" placeholder="Senha">
+      </div>
+    </div>
 
-        <div class="form-group row">
-          <div class="col-sm-5">
-            <button type="submit" class="btn btn-primary">Entrar</button>
-          </div>
-        </div>
-        
-      </form>
+    <div class="form-group row">
+      <div class="col-sm-5">
+        <button type="submit" class="btn btn-primary">Entrar</button>
+      </div>
+    </div>
+
+  </form>
+
+
+  <div class="flip-card">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">
+        <label id="labelnome" name="labelnome"></label>
+      </div>
     </div>
   </div>
 </div>

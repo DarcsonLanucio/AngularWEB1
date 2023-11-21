@@ -1,6 +1,6 @@
-import { Component } from '@angular/core';
-import { CarouselModule } from 'primeng/carousel';
-
+import {AfterViewInit, Component, OnInit} from '@angular/core';
+import {Pokemon} from "../../_model/Pokemon";
+import {PokemonService} from "../../_services/pokemon.service";
 
 
 @Component({
@@ -9,6 +9,13 @@ import { CarouselModule } from 'primeng/carousel';
   styleUrls: ['./slider.component.css']
 })
 export class SliderComponent {
+  pokemons: Pokemon[] | undefined;
 
-};
+
+  constructor(public pokemonService: PokemonService) {
+  }
+
+
+
+}
 

@@ -13,6 +13,9 @@ import {NavbarComponent} from './navbar/navbar.component';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { FormComponent } from './form/form.component';
 import {CarouselModule} from "primeng/carousel";
+import {TagModule} from "primeng/tag";
+import {ButtonModule} from "primeng/button";
+import {FormsModule} from "@angular/forms";
 
 
 @NgModule({
@@ -25,14 +28,17 @@ import {CarouselModule} from "primeng/carousel";
     SliderComponent,
 
   ],
-    imports: [
-        HttpClientModule,
-        BrowserModule,
-        BrowserAnimationsModule,
-        NavbarComponent,
-        AppRoutingModule,
-        CarouselModule
-    ],
+  imports: [
+    HttpClientModule,
+    BrowserModule,
+    BrowserAnimationsModule,
+    NavbarComponent,
+    AppRoutingModule,
+    CarouselModule,
+    TagModule,
+    ButtonModule,
+    FormsModule
+  ],
   providers: [
 
     PokemonService,

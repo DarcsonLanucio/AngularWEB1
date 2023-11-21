@@ -6,7 +6,8 @@ import {BodyComponent} from "./body/body.component";
 import {ListaPokeComponent} from "./lista-poke/lista-poke.component";
 
 const routes: Routes=[
-  {path:'', component: BodyComponent},
+  {path:'', component: ListaPokeComponent},
+  {path:'body', component: BodyComponent}
 ]
 
 @NgModule({

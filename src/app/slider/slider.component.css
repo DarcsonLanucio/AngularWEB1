@@ -1,3 +1,13 @@
-.slider{
-  display: flex;
-}
+
+  .card-wraper{
+
+    display:flex;
+
+  }
+  .card{
+    margin:0 .5em;
+    width: calc(100%/4);
+  }
+
+
+

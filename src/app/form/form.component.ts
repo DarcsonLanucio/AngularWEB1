@@ -7,4 +7,13 @@ import { Component } from '@angular/core';
 })
 export class FormComponent {
 
+  public passandoDados(n:string){
+    var nome: any;
+    nome = n;
+
+
+
+  };
+
+
 }

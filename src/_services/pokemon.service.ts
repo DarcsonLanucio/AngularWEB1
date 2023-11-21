@@ -12,7 +12,7 @@ export class PokemonService {
   constructor(
     private httpClient: HttpClient,
   ) {
-    const allPokemonsUrl = ' https://pokeapi.co/api/v2/pokemon/?limit=5';
+    const allPokemonsUrl = ' https://pokeapi.co/api/v2/pokemon/?limit=20';
     // @ts-ignore
     this.httpClient.get<any>(allPokemonsUrl).pipe(
       map(value => value.results),
@@ -23,7 +23,7 @@ export class PokemonService {
       }),
       mergeMap(value => value),
     ).subscribe((result: any)=> {
-      this.pokemons[result.id] = {
+      this.pokemons[result.id-1] = {
         number: result.id,
         name: result.name,
         image: result.sprites.front_default,
