@@ -11,7 +11,7 @@
   </div>
 
   <div class="carousel-inner">
-    <div class="carousel-item {{pokemon.number==1? 'active': pokemon.number}}"
+    <div class="carousel-item {{pokemon.number == pokemonNumber ? 'active': pokemon.number}}"
          *ngFor="let pokemon of pokemonService.pokemons">
       <div class="card-wraper">
         <app-poke-page [pokemon]="pokemon"></app-poke-page>

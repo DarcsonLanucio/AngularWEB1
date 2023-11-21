@@ -9,7 +9,7 @@ import {SliderComponent} from "./slider/slider.component";
 const routes: Routes=[
   {path:'', component: ListaPokeComponent},
   {path:'body', component: BodyComponent},
-  {path:'slider', component: SliderComponent}
+  {path:'slider/:id', component: SliderComponent}
 ]
 
 @NgModule({
