@@ -4,6 +4,9 @@ export interface Pokemon {
   image: string;
   number: number;
   name: string;
+  altura: number;
+  peso: number;
+  ability: string;
   types: Types[];
 }
 export function getPokemonImage(pokemon:Pokemon):string{
@@ -18,4 +21,7 @@ function colocaZero(str: string | number, size=3):string{
     s='0'+ s;
   }
   return s;
+}
+export function getPesoeAltura(a:number):number{
+  return (a/10);
 }

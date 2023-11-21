@@ -1,5 +1,5 @@
 import {Component, Input} from '@angular/core';
-import {getPokemonNumber, Pokemon,getPokemonImage} from "../../_model/Pokemon";
+import {getPokemonNumber, Pokemon, getPokemonImage, getPesoeAltura} from "../../_model/Pokemon";
 import {PokemonService} from "../../_services/pokemon.service";
 @Component({
   selector: 'app-poke-page',
@@ -11,5 +11,6 @@ export class PokePageComponent {
   public pokemon!: Pokemon;
   public getPokemonNumber = getPokemonNumber;
   public getPokemonImage = getPokemonImage;
+  public getPesoeAltura = getPesoeAltura;
 
 }

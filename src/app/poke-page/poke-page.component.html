@@ -7,12 +7,29 @@
       {{pokemon.name}}
     </div>
   </div>
-  <div class="poke-pagina__imag">
-    <img [src]="getPokemonImage(pokemon)">
+  <div class="poke-pagina__types__imag">
+    <div class="poke-pagina__imag">
+      <img [src]="getPokemonImage(pokemon)">
+    </div>
+    <div class="poke-pagina__currents">
+      <div class="poke-pagina__imc">
+        <div class="poke-pagina__imc--alt">
+          <label> Altura(media):</label>
+          <span>{{getPesoeAltura(pokemon.altura)}}m</span>
+        </div>
+        <div class="poke-pagina__imc--alt">
+          <label>Peso(media):</label>
+          <span>{{getPesoeAltura(pokemon.peso)}}kg</span>
+        </div>
+        <div class="poke-pagina__imc--alt">
+          <label>Habilidade:</label>
+          <span>{{pokemon.ability}}</span>
+        </div>
+      </div>
+      <div class="poke-pagina__types">
+        <div class="poke-pagina__type " *ngFor="let type of pokemon.types"
+             [class]="'poke-pagina__type--'+type.toLocaleLowerCase()">{{type}}</div>
+      </div>
+    </div>
   </div>
-  <div class="poke-pagina__types">
-    <div class="poke-pagina__type " *ngFor="let type of pokemon.types" [class]="'poke-pagina__type--'+type.toLocaleLowerCase()">{{type}}</div>
-  </div>
-
-
 </div>

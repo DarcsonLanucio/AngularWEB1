@@ -1,13 +1,28 @@
-.carousel-inner{}
-  .card-wraper{
+.carousel-inner {
+}
 
-    display:flex;
+app-poke-page {
+  width: 100%;
 
-  }
-  .carousel-item{
-    margin:0 .5em;
-    width: 100%;
-  }
+}
+
+.card-wraper {
+  display: flex;
+
+}
+
+.carousel-item {
+  margin: 0 .5em;
+  width: 100%;
+}
+
+.butons {
+  margin: 5px 0;
+  background: rgba(182, 170, 170, 0.46);
+  border-radius: 50px;
+  position: relative;
+  height: 50px;
+}
 
 
 
